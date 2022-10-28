@@ -21,9 +21,10 @@ public class MainFunction {
         return true;
     }
 
-    public void openFile()
+    public boolean openFile()
     {
-
+       System.out.println("Not yet implemented");
+      return true;
     }
 
     public Integer countUrinals(String y)

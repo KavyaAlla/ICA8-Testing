@@ -7,9 +7,7 @@ import java.util.Scanner;
 public class urinals {
     public static void main(String[] args) {
 
-        MainFunction implementation = new MainFunction();
-        Integer i = implementation.countUrinals("10101");
-        System.out.println("No:of Urinals available is " + i);
+        System.out.println("Implementing Urinals class");
 
     }
 }

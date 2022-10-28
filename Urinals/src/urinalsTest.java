@@ -11,12 +11,18 @@ public class urinalsTest {
 
         }
         @Test
-        void testCountUrinalsBeforeAddingCode() {
+        void testCountUrinals() {
                MainFunction mainFunction = new MainFunction();
                 Integer i = mainFunction.countUrinals("10100");
                 System.out.println("====== KAVYA ALLA == TEST TWO EXECUTED =======");
                 Assertions.assertEquals(1,i);
         }
+    @Test
+    void testFileError(){
+        MainFunction test = new MainFunction();
+        System.out.println("====== KAVYA ALLA == TEST THREE EXECUTED =======");
+        Assertions.assertEquals(false,test.openFile());
+    }
 
 
 }
