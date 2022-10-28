@@ -10,6 +10,13 @@ public class urinalsTest {
                 Assertions.assertEquals(false,i);
 
         }
+        @Test
+        void testCountUrinalsBeforeAddingCode() {
+               MainFunction mainFunction = new MainFunction();
+                Integer i = mainFunction.countUrinals("10100");
+                System.out.println("====== KAVYA ALLA == TEST TWO EXECUTED =======");
+                Assertions.assertEquals(1,i);
+        }
 
 
 }

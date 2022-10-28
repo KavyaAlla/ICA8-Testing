@@ -28,6 +28,7 @@ public class MainFunction {
 
     public Integer countUrinals(String s)
     {
+        System.out.println("Not yet implemented");
         return 0;
     }
 }
