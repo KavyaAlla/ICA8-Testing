@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class MainFunction {
     public String getString()
     {
@@ -21,10 +26,28 @@ public class MainFunction {
         return true;
     }
 
-    public boolean openFile()
-    {
-       System.out.println("Not yet implemented");
-      return true;
+    public boolean openFile(String path) {
+        try{
+            FileReader file = new FileReader(new File(path));
+            BufferedReader br = new BufferedReader(file);
+            String line = br.readLine();
+            System.out.println(line);
+            System.out.println("No:of urinals available: " + countUrinals(line));
+
+            while (line != null) {
+                line = br.readLine();
+                if(line.equals("-1")){
+                    break;
+                }
+                System.out.println(line);
+                System.out.println("Urinals count : " + countUrinals(line));
+            }
+            return true;
+        }
+        catch(IOException exp){
+            return false;
+
+        }
     }
 
     public Integer countUrinals(String y)

@@ -17,11 +17,11 @@ public class urinalsTest {
                 System.out.println("====== KAVYA ALLA == TEST TWO EXECUTED =======");
                 Assertions.assertEquals(1,i);
         }
-    @Test
+   @Test
     void testFileError(){
         MainFunction test = new MainFunction();
         System.out.println("====== KAVYA ALLA == TEST THREE EXECUTED =======");
-        Assertions.assertEquals(false,test.openFile());
+        Assertions.assertEquals(false,test.openFile("src/urine.dat"));
     }
 
 
