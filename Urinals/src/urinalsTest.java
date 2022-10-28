@@ -17,13 +17,21 @@ public class urinalsTest {
                 System.out.println("====== KAVYA ALLA == TEST TWO EXECUTED =======");
                 Assertions.assertEquals(1,i);
         }
-   @Test
-    void testFileError(){
+
+    @Test
+    public void testOpenFile(){
         MainFunction test = new MainFunction();
-        System.out.println("====== KAVYA ALLA == TEST THREE EXECUTED =======");
-        Assertions.assertEquals(false,test.openFile("src/urine.dat"));
+        Assertions.assertEquals(1,test.openFile("src/urinal.dat"));
+        System.out.println("===== KAVYA ALLA== TEST THREE EXECUTED=======");
     }
 
+    @Test
+    public void testWriteToFile() {
+        String optFile = "src/rule.txt";
+        MainFunction test = new MainFunction();
+        Assertions.assertEquals(1, test.writeFile(optFile, 3));
+        System.out.println("===== KAVYA ALLA== TEST FOUR EXECUTED=======");
+    }
 
 }
 
